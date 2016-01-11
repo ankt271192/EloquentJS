@@ -1,1 +1,1 @@
-# EloquentJS
+# EloquentJS Exercise Solutions
