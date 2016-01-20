@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<input type="text">
+<script>
+  var field = document.querySelector("input");
+  // Using keydown
+  /*field.addEventListener("keydown", function(event) {
+    if(event.keyCode == "Q".charCodeAt(0) ||
+       event.keyCode == "W".charCodeAt(0) ||
+       event.keyCode == "X".charCodeAt(0))
+      event.preventDefault();
+  });*/
+  // Using keypress
+  field.addEventListener("keypress", function(event) {
+    if(/[qwx]/i.test(String.fromCharCode(event.charCode)))
+       event.preventDefault();
+  });
+</script>
